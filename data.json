@@ -1,0 +1,47 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "project_name": "Random quote generator",
+            "description": "A random quote is generated after every 15 seconds or if the button is clicked",
+            "technologies": ["javaScript"],
+            "live_link": "https://malihat.github.io/techdegree-project-1/",
+            "github_link": "https://github.com/malihat/techdegree-project-1",
+            "images_url" : ["../images/project1-a.jpg", "../images/project1-b.jpg", "../images/project1-c.jpg"]
+        },
+        {
+            "id": 2,
+            "project_name": "List Pagination and Filtering",
+            "description": "It provides a list of students which is paginated by displaying 10 students per page. User can also use a search bar to filter from students' list.",
+            "technologies": ["javaScript"],
+            "live_link": "https://malihat.github.io/techdegree-project-2/",
+            "github_link": "https://github.com/malihat/techdegree-project-2",
+            "images_url" : ["../images/project2-a.jpg", "../images/project2-b.jpg", "../images/project2-c.jpg", "../images/project2-d.jpg"]
+        },
+        {
+            "id": 3,
+            "project_name": "Interactive Form",
+            "description": "It displays a form which has input fields, dropdown menus and checkboxes. There is a submit button at the end of the form. If the user has missed required field the form will not submit  ",
+            "technologies": ["jQuery"],
+            "live_link": "https://malihat.github.io/techdegree-project-3/",
+            "github_link": "https://github.com/malihat/techdegree-project-3",
+            "images_url" :["../images/project3-a.jpg", "../images/project3-b.jpg", "../images/project3-c.jpg", "../images/project3-d.jpg"]
+        },
+        {
+            "id": 4,
+            "project_name": "Phrase Hunter Game",
+            "description": "The player has to guess the phrase. Player will get 5 chances to guess, after every wrong answer a heart will be lost and after every correct guess the letter in the phrase will be displayed. Every time the player guess a letter, it will be disabled on the keyboard.",
+            "live_link": "https://malihat.github.io/techdegree-project-4/",
+            "github_link": "https://github.com/malihat/techdegree-project-4",
+            "images_url" : ["../images/project4-a.jpg", "../images/project4-b.jpg", "../images/project4-c.jpg"]
+        },
+        {
+            "id": 5,
+            "project_name": "Phrase Hunter Game",
+            "description": "The player has to guess the phrase. Player will get 5 chances to guess, after every wrong answer a heart will be lost and after every correct guess the letter in the phrase will be displayed. Every time the player guess a letter, it will be disabled on the keyboard.",
+            "live_link": "https://malihat.github.io/techdegree-project-4/",
+            "github_link": "https://github.com/malihat/techdegree-project-4",
+            "images_url" : ["../images/project4-a.jpg", "../images/project4-b.jpg", "../images/project4-c.jpg"]
+        }
+    ]
+}
