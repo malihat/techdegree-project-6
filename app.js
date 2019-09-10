@@ -24,6 +24,16 @@ app.get('/project/:id', (req, res) => {
     let id = req.params.id;
     res.locals.project = data[id];
     res.render('project');
+
+    // displays error if the project does not exist
+    if (id >= data.length) {
+        // creates error
+        const err = new Error('This project is unavailable');
+        err.status = 404;
+        res.status(err.status);
+        // calls the error template and sends error to it
+        res.render('error', {error: err});
+    }
 });
 
 // 404 error handling 
@@ -48,4 +58,4 @@ app.listen(3000);
 //     // let error = new Error();
 //     // console.log(error.status);
 
-// });
+// });//https://placehold.it/550x350
