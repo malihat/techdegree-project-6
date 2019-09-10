@@ -12,7 +12,7 @@ block content
 
         //- Use interpolation to dynamically add the project description.
         p.lead.text-light
-          | Description #{project.description}
+          | #{project.description}
 
       .cell.portfolio-meta.small-6.medium-2.large-3
         h6 Technologies
@@ -21,8 +21,6 @@ block content
         ul
           each tech in project.technologies
             li= tech
-          //- li CSS
-          //- li JavaScript
 
         //- Use template literals and interpolation to add URLs to the hrefs below so they link to the repo and the live version of each project.
         a.button.expanded(href=`${project.live_link}` target=_blank) Live Demo

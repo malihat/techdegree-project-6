@@ -1,10 +1,6 @@
 
-/* h1,h2,h3,h4,h5,p{
-  font-family: 'Merriweather', serif;
-} */
-
 body {
-  background-color: #cacbcc
+  background-color:#c9d3d6
 }
 
   h5{
@@ -15,7 +11,7 @@ body {
   }
 
   h1,h2,h3,h4,h5, p {
-    font-family: 'Sanchez', serif;
+    font-family: 'Arvo', serif;
   }
 
   h1 {

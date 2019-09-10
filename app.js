@@ -40,6 +40,8 @@ app.use( (err, req, res, next) => {
     res.render('error');
 });
 
+app.listen(3000);
+
 // Code taken from https://stackoverflow.com/questions/11500204/how-can-i-get-express-js-to-404-only-on-missing-routes
 // app.get('*', (req, res) => {
 //     res.status(404).send('<h2 style="color:#8d9091; font-size:40px;"> Page you are looking for does not exist </h2>')
@@ -47,5 +49,3 @@ app.use( (err, req, res, next) => {
 //     // console.log(error.status);
 
 // });
-
-app.listen(3000)
