@@ -23,16 +23,16 @@ app.get('/about', (req, res) => {
 app.get('/project/:id', (req, res) => {
     let id = req.params.id;
     res.locals.project = data[id];
-    res.render('project');
 
     // displays error if the project does not exist
     if (id >= data.length) {
         // creates error
         const err = new Error('This project is unavailable');
-        err.status = 404;
-        res.status(err.status);
+        res.status(404);
         // calls the error template and sends error to it
         res.render('error', {error: err});
+    } else {
+        res.render('project');
     }
 });
 
@@ -52,10 +52,3 @@ app.use( (err, req, res, next) => {
 
 app.listen(3000);
 
-// Code taken from https://stackoverflow.com/questions/11500204/how-can-i-get-express-js-to-404-only-on-missing-routes
-// app.get('*', (req, res) => {
-//     res.status(404).send('<h2 style="color:#8d9091; font-size:40px;"> Page you are looking for does not exist </h2>')
-//     // let error = new Error();
-//     // console.log(error.status);
-
-// });//https://placehold.it/550x350
